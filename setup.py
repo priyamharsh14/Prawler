@@ -7,7 +7,7 @@ setup(
 	author = 'Priyam Harsh',
 	author_email = 'priyamharsh14@gmail.com',
 	url = 'https://github.com/priyamharsh14/Prawler',
-	download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
+	download_url = 'https://github.com/priyamharsh14/Prawler/tarball/master',
 	keywords = ['proxy', 'scraper', 'crawler', 'proxycrawler'],
 	install_requires=['requests'],
 	data_files=[('', ['LICENSE'])],
