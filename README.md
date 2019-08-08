@@ -45,6 +45,6 @@ import Prawler
 Prawler.get_proxy_txt("proxy_list.txt", "http", "elite")
 ```
 
-#### Note:
-Valid Proxy Type: http, socks4, socks5
-Valid Anonymity Level: all, elite, anonymous, transparent
+### Note:
+**Valid Proxy Type: http, socks4, socks5**
+**Valid Anonymity Level: all, elite, anonymous, transparent**
