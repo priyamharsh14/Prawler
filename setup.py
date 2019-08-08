@@ -12,7 +12,7 @@ setup(
 	install_requires=['requests'],
 	data_files=[('', ['LICENSE'])],
 	include_package_data=True,
-	long_description=open('README.md').read()
+	long_description=open('README.md').read(),
 	classifiers=[
 	'Development Status :: 4 - Beta',
 	'Intended Audience :: Developers',
