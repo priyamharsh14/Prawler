@@ -3,4 +3,4 @@
 	Prawler
 	<br>
 </h1>
-<h4 align="center">Advance Proxy Scraper written in Python3</h4>
+<h4 align="center">Advanced Proxy Scraper</h4>
