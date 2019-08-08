@@ -2,7 +2,7 @@ import json
 import random
 import requests
 
-def get_random_proxy(self, proxytype, anonymity):
+def get_random_proxy(proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
@@ -19,7 +19,7 @@ def get_random_proxy(self, proxytype, anonymity):
 	random.shuffle(res)
 	return res[0]
 
-def get_proxy_list(self, proxytype, anonymity):
+def get_proxy_list(proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
@@ -61,7 +61,7 @@ def get_proxy_list(self, proxytype, anonymity):
 	random.shuffle(proxies)
 	return proxies
 
-def get_proxy_json(self, proxytype, anonymity):
+def get_proxy_json(proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
@@ -109,7 +109,7 @@ def get_proxy_json(self, proxytype, anonymity):
 			proxydict[ipadd] = port
 	return json.dumps(proxydict)
 
-def get_proxy_txt(self, filename, proxytype, anonymity):
+def get_proxy_txt(filename, proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
