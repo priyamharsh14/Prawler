@@ -22,6 +22,7 @@ pip install Prawler
 ### Usage
 We can use Prawler in several ways:
 - Find a single random proxy server
+
 Basic Syntax:
 ```
 Prawler.get_random_proxy(<PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
@@ -33,6 +34,7 @@ proxy = Prawler.get_random_proxy("http", "elite")
 ```
 
 - Find all proxies in list format
+
 Basic Syntax:
 ```
 Prawler.get_proxy_list(<PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
@@ -44,6 +46,7 @@ proxy_list = Prawler.get_proxy_list("http", "elite")
 ```
 
 - Find all proxies in JSON format
+
 Basic Syntax:
 ```
 Prawler.get_proxy_json(<PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
@@ -55,6 +58,7 @@ proxy_list = Prawler.get_proxy_json("http", "elite")
 ```
 
 - Find all proxies and save it into a text file
+
 Basic Syntax:
 ```
 Prawler.get_proxy_txt(<FILENAME>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
@@ -67,5 +71,5 @@ Prawler.get_proxy_txt("proxy_list.txt", "http", "elite")
 
 ### Note:
 **Valid Proxy Type: http, socks4, socks5**
-<br>
+
 **Valid Anonymity Level: all, elite, anonymous, transparent**
