@@ -19,13 +19,17 @@ def get_random_proxy(proxytype, anonymity):
 	random.shuffle(res)
 	return res[0]
 
-def get_proxy_list(proxytype, anonymity):
+def get_proxy_list(no_of_proxies, proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
 	
 	Returns a proxy list as per your need.
 	"""
+	if not no_of_proxies:
+		raise Exception("Please specify the number of proxies you need !!")
+	if str(type(no_of_proxies))!="<class 'int'>":
+		raise Exception("Please enter a valid number of proxies you need !!")
 	if proxytype not in ["http", "socks4", "socks5"]:
 		raise Exception("Invalid Proxy Type !!")
 	if anonymity not in ["all", "elite", "anonymous", "transparent"]:
@@ -38,19 +42,17 @@ def get_proxy_list(proxytype, anonymity):
 	if proxytype=="http":
 		api2 = "http://spys.me/proxy.txt"
 		res = requests.get(api2).text.split("\n\n")[1].split("\r")[:-1][0].split("\n")
+		res = [i for i in res if i]
 		for line in res:
 			temp = line.split(" ")
-			if anonymity=="elite":
-				if temp[1].split("-")[1] == "H":
-					proxies.append(temp[0])
-			elif anonymity=="anonymous":
-				if temp[1].split("-")[1] == "A":
-					proxies.append(temp[0])
-			elif anonymity=="transparent":
-				if temp[1].split("-")[1] == "N":
-					proxies.append(temp[0])
+			if anonymity=="elite" and temp[1].split("-")[1] == "H":
+				proxies.append(temp[0])
+			elif anonymity=="anonymous" and temp[1].split("-")[1] == "A":
+				proxies.append(temp[0])
+			elif anonymity=="transparent" and temp[1].split("-")[1] == "N":
+				proxies.append(temp[0])
 			else:
-				pass
+				proxies.append(temp[0])
 	if anonymity != "all":
 		api3 = "https://www.proxy-list.download/api/v1/get?type="+proxytype+"&anon="+anonymity
 	else:
@@ -59,15 +61,22 @@ def get_proxy_list(proxytype, anonymity):
 	res = [i for i in res if i]
 	proxies+=res
 	random.shuffle(proxies)
-	return proxies
+	if no_of_proxies>len(proxies):
+		return proxies
+	else:
+		return proxies[:no_of_proxies]
 
-def get_proxy_json(proxytype, anonymity):
+def get_proxy_json(no_of_proxies, proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
 	
 	Returns a proxy list in a JSON format as per your need.
 	"""
+	if not no_of_proxies:
+		raise Exception("Please specify the number of proxies you need !!")
+	if str(type(no_of_proxies))!="<class 'int'>":
+		raise Exception("Please enter a valid number of proxies you need !!")
 	if proxytype not in ["http", "socks4", "socks5"]:
 		raise Exception("Invalid Proxy Type !!")
 	if anonymity not in ["all", "elite", "anonymous", "transparent"]:
@@ -80,19 +89,17 @@ def get_proxy_json(proxytype, anonymity):
 	if proxytype=="http":
 		api2 = "http://spys.me/proxy.txt"
 		res = requests.get(api2).text.split("\n\n")[1].split("\r")[:-1][0].split("\n")
+		res = [i for i in res if i]
 		for line in res:
 			temp = line.split(" ")
-			if anonymity=="elite":
-				if temp[1].split("-")[1] == "H":
-					proxies.append(temp[0])
-			elif anonymity=="anonymous":
-				if temp[1].split("-")[1] == "A":
-					proxies.append(temp[0])
-			elif anonymity=="transparent":
-				if temp[1].split("-")[1] == "N":
-					proxies.append(temp[0])
+			if anonymity=="elite" and temp[1].split("-")[1] == "H":
+				proxies.append(temp[0])
+			elif anonymity=="anonymous" and temp[1].split("-")[1] == "A":
+				proxies.append(temp[0])
+			elif anonymity=="transparent" and temp[1].split("-")[1] == "N":
+				proxies.append(temp[0])
 			else:
-				pass
+				proxies.append(temp[0])
 	if anonymity != "all":
 		api3 = "https://www.proxy-list.download/api/v1/get?type="+proxytype+"&anon="+anonymity
 	else:
@@ -101,6 +108,8 @@ def get_proxy_json(proxytype, anonymity):
 	res = [i for i in res if i]
 	proxies+=res
 	random.shuffle(proxies)
+	if no_of_proxies<len(proxies):
+		proxies = proxies[:no_of_proxies]
 	proxydict = dict()
 	for proxy in proxies:
 		ipadd = proxy.split(":")[0]
@@ -109,13 +118,17 @@ def get_proxy_json(proxytype, anonymity):
 			proxydict[ipadd] = port
 	return json.dumps(proxydict)
 
-def get_proxy_txt(filename, proxytype, anonymity):
+def get_proxy_txt(filename, no_of_proxies, proxytype, anonymity):
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
 	
 	Returns a proxy list in TXT file as per your need.
 	"""
+	if not no_of_proxies:
+		raise Exception("Please specify the number of proxies you need !!")
+	if str(type(no_of_proxies))!="<class 'int'>":
+		raise Exception("Please enter a valid number of proxies you need !!")
 	if proxytype not in ["http", "socks4", "socks5"]:
 		raise Exception("Invalid Proxy Type !!")
 	if anonymity not in ["all", "elite", "anonymous", "transparent"]:
@@ -129,18 +142,16 @@ def get_proxy_txt(filename, proxytype, anonymity):
 		api2 = "http://spys.me/proxy.txt"
 		res = requests.get(api2).text.split("\n\n")[1].split("\r")[:-1][0].split("\n")
 		for line in res:
+			res = [i for i in res if i]
 			temp = line.split(" ")
-			if anonymity=="elite":
-				if temp[1].split("-")[1] == "H":
-					proxies.append(temp[0])
-			elif anonymity=="anonymous":
-				if temp[1].split("-")[1] == "A":
-					proxies.append(temp[0])
-			elif anonymity=="transparent":
-				if temp[1].split("-")[1] == "N":
-					proxies.append(temp[0])
+			if anonymity=="elite" and temp[1].split("-")[1] == "H":
+				proxies.append(temp[0])
+			elif anonymity=="anonymous" and temp[1].split("-")[1] == "A":
+				proxies.append(temp[0])
+			elif anonymity=="transparent" and temp[1].split("-")[1] == "N":
+				proxies.append(temp[0])
 			else:
-				pass
+				proxies.append(temp[0])
 	if anonymity != "all":
 		api3 = "https://www.proxy-list.download/api/v1/get?type="+proxytype+"&anon="+anonymity
 	else:
@@ -149,6 +160,8 @@ def get_proxy_txt(filename, proxytype, anonymity):
 	res = [i for i in res if i]
 	proxies+=res
 	random.shuffle(proxies)
+	if no_of_proxies<len(proxies):
+		proxies = proxies[:no_of_proxies]
 	fp = open(filename,"w")
 	for proxy in proxies:
 		fp.write(proxy+"\n")
