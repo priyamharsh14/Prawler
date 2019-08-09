@@ -37,36 +37,36 @@ proxy = Prawler.get_random_proxy("http", "elite")
 
 Basic Syntax:
 ```
-Prawler.get_proxy_list(<PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_list(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
 ```
 Example:
 ```
 import Prawler
-proxy_list = Prawler.get_proxy_list("http", "elite")
+proxy_list = Prawler.get_proxy_list(5, "http", "elite")
 ```
 
 - Find all proxies in JSON format
 
 Basic Syntax:
 ```
-Prawler.get_proxy_json(<PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_json(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
 ```
 Example:
 ```
 import Prawler
-proxy_list = Prawler.get_proxy_json("http", "elite")
+proxy_list = Prawler.get_proxy_json(5, "http", "elite")
 ```
 
 - Find all proxies and save it into a text file
 
 Basic Syntax:
 ```
-Prawler.get_proxy_txt(<FILENAME>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_txt(<FILENAME>, <NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
 ```
 Example:
 ```
 import Prawler
-Prawler.get_proxy_txt("proxy_list.txt", "http", "elite")
+Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 ```
 
 ### Note:
