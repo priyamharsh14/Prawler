@@ -14,6 +14,12 @@
 ### What is Prawler ?
 Prawler finds best and working proxies from the internet in seconds. Proxies are used by developers, ethical hackers, pentesters and so on, in order to cover their tracks or bypass firewall restrictions. Prawler helps to find desired proxy in all possible formats.
 
+### Features
+- Fast Proxy Server Scraping through multiple API's
+- Extract various types of Proxy Servers (HTTP, SOCKS4, SOCKS5)
+- Scrap for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
+- Various output formats available (List, JSON, TXT file)
+
 ### Installation
 
 New Installation:
