@@ -23,7 +23,7 @@ pip install Prawler
 
 Updating the package:
 ```
-pip install --upgarde Prawler
+pip install --upgrade Prawler
 ```
 
 ### Usage
