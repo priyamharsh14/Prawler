@@ -38,7 +38,7 @@ pip install --upgrade Prawler
 
 ### Usage
 We can use Prawler in several ways:
-- Find a single random proxy server
+- **Find a single random proxy server**
 
 Basic Syntax:
 ```
@@ -50,7 +50,7 @@ import Prawler
 proxy = Prawler.get_random_proxy("http", "elite")
 ```
 
-- Find all proxies in list format
+- **Find all proxies in list format**
 
 Basic Syntax:
 ```
@@ -62,7 +62,7 @@ import Prawler
 proxy_list = Prawler.get_proxy_list(5, "http", "elite")
 ```
 
-- Find all proxies in JSON format
+- **Find all proxies in JSON format**
 
 Basic Syntax:
 ```
@@ -74,7 +74,7 @@ import Prawler
 proxy_list = Prawler.get_proxy_json(5, "http", "elite")
 ```
 
-- Find all proxies and save it into a text file
+- **Find all proxies and save it into a text file**
 
 Basic Syntax:
 ```
