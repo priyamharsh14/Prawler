@@ -15,8 +15,15 @@
 Prawler finds best and working proxies from the internet in seconds. Proxies are used by developers, ethical hackers, pentesters and so on, in order to cover their tracks or bypass firewall restrictions. Prawler helps to find desired proxy in all possible formats.
 
 ### Installation
+
+New Installation:
 ```
 pip install Prawler
+```
+
+Updating the package:
+```
+pip install --upgarde Prawler
 ```
 
 ### Usage
