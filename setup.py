@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
 	name = 'Prawler',
 	packages = ['Prawler'],
-	version = '0.3beta',
+	version = '0.31beta',
 	description = 'Scrap Proxies from Internet in seconds',
 	author = 'Priyam Harsh',
 	author_email = 'priyamharsh14@gmail.com',
