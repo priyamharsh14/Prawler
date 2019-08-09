@@ -5,9 +5,9 @@
 </h1>
 <h4 align="center">Advanced Proxy Scraper</h4>
 <p align="center">
-<img src="https://img.shields.io/pypi/pyversions/Prawler">
 <img src="https://img.shields.io/github/license/priyamharsh14/Prawler">
 <img src="https://img.shields.io/pypi/v/Prawler">
+<img src="https://img.shields.io/pypi/pyversions/Prawler">
 </p>
 <br>
 
