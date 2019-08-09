@@ -11,20 +11,20 @@
 </p>
 <br>
 
-### What is Prawler ?
+## What is Prawler ?
 Prawler finds best and working proxies from the internet in seconds. Proxies are used by developers, ethical hackers, pentesters and so on, in order to cover their tracks or bypass firewall restrictions. Prawler helps to find desired proxy in all possible formats.
 
-### Features
+## Features
 - Fast Proxy Server Scraping through multiple API's
 - Extract various types of Proxy Servers (HTTP, SOCKS4, SOCKS5)
 - Scrap for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
 - Various output formats available (List, JSON, TXT file)
 
-### What's new in 0.31beta update ?
+## What's new in 0.31beta update ?
 - Bug fixes
 - User can specify the number of proxies he/she needs in all available formats (List, JSON, TXT file)
 
-### Installation
+## Installation
 
 New Installation:
 ```
@@ -36,7 +36,7 @@ Updating the package:
 pip install --upgrade Prawler
 ```
 
-### Usage
+## Usage
 We can use Prawler in several ways:
 - **Find a single random proxy server**
 
@@ -86,7 +86,7 @@ import Prawler
 Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 ```
 
-### Note:
+## Note:
 **Valid Proxy Type: http, socks4, socks5**
 
 **Valid Anonymity Level: all, elite, anonymous, transparent**
