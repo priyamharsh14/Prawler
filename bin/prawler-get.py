@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from Prawler import *
 from optparse import OptionParser
 
@@ -8,7 +6,7 @@ banner = '''
  |  _ \ _ __ __ ___      _| | ___ _ __ 
  | |_) | '__/ _` \ \ /\ / / |/ _ \ '__|
  |  __/| | | (_| |\ V  V /| |  __/ |   
- |_|   |_|  \__,_| \_/\_/ |_|\___|_|     V0.46beta
+ |_|   |_|  \__,_| \_/\_/ |_|\___|_|     V0.47beta
 
 '''
 print(banner)
