@@ -22,6 +22,7 @@ Prawler finds best and working proxies from the internet in seconds. Proxies are
 
 ## What's new in 0.51beta update ?
 - Bug fixes
+- Reduced the code length
 - User can specify the number of proxies he/she needs in all available formats (List, JSON, TXT file)
 
 ## Installation
