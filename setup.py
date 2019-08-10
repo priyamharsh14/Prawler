@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
 	name = 'Prawler',
 	packages = ['Prawler'],
-	version = '0.47beta',
+	version = '0.48beta',
 	description = 'Scrap Proxies from Internet in seconds',
 	author = 'Priyam Harsh',
 	author_email = 'priyamharsh14@gmail.com',
@@ -11,7 +11,7 @@ setup(
 	keywords = ['proxy', 'scraper', 'crawler', 'proxycrawler'],
 	install_requires=['requests'],
 	data_files=[('', ['LICENSE'])],
-	scripts=['bin/prawler-get.py'],
+	scripts=['bin/prawler-get'],
 	include_package_data=True,
 	classifiers=[
 	'Development Status :: 4 - Beta',
