@@ -2,14 +2,13 @@ from distutils.core import setup
 setup(
 	name = 'Prawler',
 	packages = ['Prawler'],
-	version = '0.5beta',
+	version = '0.51beta',
 	description = 'Scrap Proxies from Internet in seconds',
 	author = 'Priyam Harsh',
 	author_email = 'priyamharsh14@gmail.com',
 	url = 'https://github.com/priyamharsh14/Prawler',
 	download_url = 'https://github.com/priyamharsh14/Prawler/tarball/master',
 	keywords = ['proxy', 'scraper', 'crawler', 'proxycrawler'],
-	install_requires=['requests'],
 	data_files=[('', ['LICENSE'])],
 	include_package_data=True,
 	classifiers=[
