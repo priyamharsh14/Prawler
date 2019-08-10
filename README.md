@@ -6,7 +6,7 @@
 <h4 align="center">Advanced Proxy Scraper</h4>
 <p align="center">
 	<a href="https://pypi.org/project/Prawler/"><img src="https://img.shields.io/pypi/v/Prawler"></a>
-<img src="https://img.shields.io/github/license/priyamharsh14/Prawler">
+<a href="https://raw.githubusercontent.com/priyamharsh14/Prawler/master/LICENSE"><img src="https://img.shields.io/github/license/priyamharsh14/Prawler"></a>
 <img src="https://img.shields.io/pypi/pyversions/Prawler">
 </p>
 <br>
