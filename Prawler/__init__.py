@@ -83,14 +83,12 @@ def get_proxy_json(no_of_proxies, proxytype, anonymity):
 	return json.dumps(proxydict)
 
 def get_proxy_txt(filename, no_of_proxies, proxytype, anonymity):
-
 	"""
 	Valid Proxy Type: "http", "socks4", "socks5"
 	Valid Anonymity Level: "elite", "anonymous", "transparent", "all"
 	
 	Returns a proxy list in TXT file as per your need.
 	"""
-
 	proxies=get_proxy_list(no_of_proxies, proxytype, anonymity)
 	fp = open(filename,"w")
 	for proxy in proxies:
