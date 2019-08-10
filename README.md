@@ -20,7 +20,7 @@ Prawler finds best and working proxies from the internet in seconds. Proxies are
 - Scrap for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
 - Various output formats available (List, JSON, TXT file)
 
-## What's new in 0.5beta update ?
+## What's new in 0.51beta update ?
 - Bug fixes
 - User can specify the number of proxies he/she needs in all available formats (List, JSON, TXT file)
 
