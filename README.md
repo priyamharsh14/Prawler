@@ -1,6 +1,6 @@
 <h1 align="center">
 	<br>
-	<img src="https://i.ibb.co/zZHrssL/prawler.png">
+	<img src="https://i.ibb.co/w7jx8Yg/prawler.png" alt="prawler" border="0">
 	<br>
 </h1>
 <h4 align="center">Advanced Proxy Scraper</h4>
