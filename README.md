@@ -64,7 +64,7 @@ proxy_list = Prawler.get_proxy_list(5, "http", "elite")
 
 - **Find all proxies in JSON format**
 
-- Syntax:
+Syntax:
 ```
 Prawler.get_proxy_json(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
 ```
