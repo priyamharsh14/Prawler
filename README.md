@@ -88,8 +88,7 @@ Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 
 ## Note:
 
-**Valid Proxy Type: http, socks4, socks5**
-
+**Valid Proxy Type: http, socks4, socks5**<br>
 **Valid Anonymity Level: all, elite, anonymous, transparent**
 
 ## Donate
