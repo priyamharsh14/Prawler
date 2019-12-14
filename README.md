@@ -88,5 +88,12 @@ Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 
 ## Note:
 
-**Valid Proxy Type: http, socks4, socks5**<br>
+**Valid Proxy Type: http, socks4, socks5**
+
 **Valid Anonymity Level: all, elite, anonymous, transparent**
+
+## Donate
+
+If you feel this project was awesome, you can give me a cup of coffee :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/priyamharsh14)
