@@ -92,7 +92,10 @@ Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 
 **Valid Proxy Type: http, socks4, socks5**<br>
 **Valid Anonymity Level: all, elite, anonymous, transparent**<br>
-**Valid Country Codes: AF, AL, AM, AR, 'AT, AU, BA, BD, BG, BO, BR, BY, CA, CL, CM, CN, CO, CZ, DE, EC, EG, ES, FR, GB, GE, GN, GR, GT, HK, HN, HU, ID, IN, IQ, IR, IT, JP, KE, KG, KH, KR, KZ, LB, LT, LV, LY, MD, MM, MN, MU, MW, MX, MY, NG, NL, NO, NP, PE, PH, PK, PL, PS, PY, RO, RS, RU, SC, SE, SG, SK, SY, TH, TR, TW, TZ, UA, UG, US, VE, VN, ZA**
+**Valid Country Codes:**<br>
+```
+AF, AL, AM, AR, AT, AU, BA, BD, BG, BO, BR, BY, CA, CL, CM, CN, CO, CZ, DE, EC, EG, ES, FR, GB, GE, GN, GR, GT, HK, HN, HU, ID, IN, IQ, IR, IT, JP, KE, KG, KH, KR, KZ, LB, LT, LV, LY, MD, MM, MN, MU, MW, MX, MY, NG, NL, NO, NP, PE, PH, PK, PL, PS, PY, RO, RS, RU, SC, SE, SG, SK, SY, TH, TR, TW, TZ, UA, UG, US, VE, VN, ZA
+```
 
 ## Donate:
 
