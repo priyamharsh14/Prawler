@@ -51,8 +51,8 @@ Example:
 import Prawler
 proxy = Prawler.get_random_proxy("http", "elite")
 ```
-
 <br>
+
 - **Find all proxies in list format**
 
 Syntax:
@@ -64,8 +64,8 @@ Example:
 import Prawler
 proxy_list = Prawler.get_proxy_list(5, "http", "elite")
 ```
-
 <br>
+
 - **Find all proxies in JSON format**
 
 Syntax:
@@ -77,8 +77,8 @@ Example:
 import Prawler
 proxy_list = Prawler.get_proxy_json(5, "http", "elite")
 ```
-
 <br>
+
 - **Find all proxies and save it into a text file**
 
 Syntax:
