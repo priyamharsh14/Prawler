@@ -19,10 +19,11 @@ Prawler finds best and working proxies from the internet in seconds. Proxies are
 - Scrap for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
 - Various output formats available (List, JSON, TXT file)
 
-## What's new in 0.51beta update ?
+## What's new in 0.6beta update ?
 - Bug fixes
 - Reduced the code length
 - User can specify the number of proxies he/she needs in all available formats (List, JSON, TXT file)
+- User can specify a country code to find proxies from a specific country.
 
 ## Installation:
 
@@ -90,7 +91,8 @@ Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
 ## Note:
 
 **Valid Proxy Type: http, socks4, socks5**<br>
-**Valid Anonymity Level: all, elite, anonymous, transparent**
+**Valid Anonymity Level: all, elite, anonymous, transparent**<br>
+**Valid Country Codes: AF, AL, AM, AR, 'AT, AU, BA, BD, BG, BO, BR, BY, CA, CL, CM, CN, CO, CZ, DE, EC, EG, ES, FR, GB, GE, GN, GR, GT, HK, HN, HU, ID, IN, IQ, IR, IT, JP, KE, KG, KH, KR, KZ, LB, LT, LV, LY, MD, MM, MN, MU, MW, MX, MY, NG, NL, NO, NP, PE, PH, PK, PL, PS, PY, RO, RS, RU, SC, SE, SG, SK, SY, TH, TR, TW, TZ, UA, UG, US, VE, VN, ZA**
 
 ## Donate:
 
