@@ -57,12 +57,17 @@ proxy = Prawler.get_random_proxy("http", "elite")
 
 Syntax:
 ```
-Prawler.get_proxy_list(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_list(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>, <COUNTRY CODE>)
 ```
 Example:
 ```
 import Prawler
 proxy_list = Prawler.get_proxy_list(5, "http", "elite")
+```
+or
+```
+import Prawler
+proxy_list = Prawler.get_proxy_list(5, "http", "elite", "US")
 ```
 <br>
 
@@ -70,12 +75,17 @@ proxy_list = Prawler.get_proxy_list(5, "http", "elite")
 
 Syntax:
 ```
-Prawler.get_proxy_json(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_json(<NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>, <COUNTRY CODE>)
 ```
 Example:
 ```
 import Prawler
 proxy_list = Prawler.get_proxy_json(5, "http", "elite")
+```
+or
+```
+import Prawler
+proxy_list = Prawler.get_proxy_json(5, "http", "elite", "US")
 ```
 <br>
 
@@ -83,12 +93,17 @@ proxy_list = Prawler.get_proxy_json(5, "http", "elite")
 
 Syntax:
 ```
-Prawler.get_proxy_txt(<FILENAME>, <NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>)
+Prawler.get_proxy_txt(<FILENAME>, <NO. OF PROXIES>, <PROXY TYPE>, <PROXY ANONYMITY LEVEL>, <COUNTRY CODE>)
 ```
 Example:
 ```
 import Prawler
 Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite")
+```
+or
+```
+import Prawler
+Prawler.get_proxy_txt("proxy_list.txt", 50, "http", "elite", "US")
 ```
 
 ## Note:
