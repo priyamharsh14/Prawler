@@ -15,8 +15,9 @@ Prawler finds best and working proxies from the internet in seconds. Proxies are
 
 ## Features:
 - Fast Proxy Server Scraping through multiple API's
-- Extract various types of Proxy Servers (HTTP, SOCKS4, SOCKS5)
-- Scrap for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
+- Extracts various types of Proxy Servers (HTTP, SOCKS4, SOCKS5)
+- Scraps for Proxy Servers based on their Anonymity Level (Transparent, Anonymous, Elite)
+- Find proxies from a specific country (using Country Codes)
 - Various output formats available (List, JSON, TXT file)
 
 ## What's new in 0.6beta update ?
