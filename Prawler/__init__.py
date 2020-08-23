@@ -39,7 +39,10 @@ def get_proxy_list(no_of_proxies, proxytype, anonymity, country="all"):
 		raise Exception("Invalid Anonymity Level !!")
 	if country not in valid_codes:
 		raise Exception("Invalid Country Code !!")
+
 	proxies = []
+		
+
 	api1 = "https://api.proxyscrape.com/?request=getproxies&timeout=500&country="+country+"&ssl=all&type="+proxytype+"&anonymity="+anonymity
 	res =  urllib.request.urlopen(api1).read().decode('utf-8').split("\r\n")
 	res = [i for i in res if i]
@@ -82,6 +85,22 @@ def get_proxy_list(no_of_proxies, proxytype, anonymity, country="all"):
 	res = urllib.request.urlopen(res).read().decode('utf-8').split("\r\n")
 	res = [i for i in res if i]
 	proxies+=res
+
+	if anonymity != "all":
+		if country != "all":
+			api4 = "https://www.proxyscan.io/api/proxy?last_check=3800&country="+country+"&limit=20&type="+proxytype+"&level="+anonymity
+		else:
+			api4 = "https://www.proxyscan.io/api/proxy?last_check=3800&limit=20&type="+proxytype+"&level="+anonymity
+	else: 
+		if country != "all":
+			api4 = "https://www.proxyscan.io/api/proxy?last_check=3800&country="+country+"&limit=20&type="+proxytype
+		else:
+			api4 = "https://www.proxyscan.io/api/proxy?last_check=3800&limit=20&type="+ proxytype
+		
+		res = json.loads(urllib.request.urlopen(api4).read().decode('utf-8'))
+		for proxy in res:
+			proxies.append('{}:{}'.format(proxy["Ip"], proxy["Port"]))
+
 	random.shuffle(proxies)
 	if no_of_proxies>len(proxies):
 		return proxies
