@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
 	name = 'Prawler',
 	packages = ['Prawler'],
-	version = '0.6beta',
+	version = '0.7',
 	description = 'Scrap Proxies from Internet in seconds',
 	author = 'Priyam Harsh',
 	author_email = 'priyamharsh14@gmail.com',
@@ -12,7 +12,7 @@ setup(
 	data_files=[('', ['LICENSE'])],
 	include_package_data=True,
 	classifiers=[
-	'Development Status :: 4 - Beta',
+	'Development Status :: 5 - Production/Stable',
 	'Intended Audience :: Developers',
 	'Topic :: Software Development :: Libraries :: Python Modules',
 	'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
