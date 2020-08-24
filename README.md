@@ -20,12 +20,6 @@ Prawler finds best and working proxies from the internet in seconds. Proxies are
 - Find proxies from a specific country (using Country Codes)
 - Various output formats available (List, JSON, TXT file)
 
-## What's new in 0.6beta update ?
-- Bug fixes
-- Reduced the code length
-- User can specify the number of proxies he/she needs in all available formats (List, JSON, TXT file)
-- User can specify a country code to find proxies from a specific country.
-
 ## Installation:
 
 New Installation:
